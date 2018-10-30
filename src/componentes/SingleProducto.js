@@ -1,5 +1,5 @@
 import React from 'react';
-import './SingleProducto.css';
+import '../css/SingleProducto.css';
 
 const SingleProducto = (props) => {
 

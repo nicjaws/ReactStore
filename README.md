@@ -1,4 +1,4 @@
-Small Store in React with Routes
+Small Store in React with Router
 
 ![Screenshot](ReactStore.png)
 
