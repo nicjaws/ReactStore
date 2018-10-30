@@ -5,7 +5,8 @@ import Navegacion from './Navegacion';
 import Productos from './Productos';
 import Nosotros from './Nosotros';
 import Error from './Error';
-import SingleProducto from './SingleProducto'
+import SingleProducto from './SingleProducto';
+import Contacto from './Contacto';
 import infoProductos from '../datos/datos.json'
 
 
@@ -37,8 +38,6 @@ class Router extends Component {
                             <Productos
                                 productos={this.state.productos}
                             />
-                            <Route exact path="/contacto" component={Contacto}
-                            />
                         )} />
                         <Route exact path="/producto/:productoId" render ={(props) => {
                            let idProducto = props.location.pathname.replace('/producto/','');
@@ -48,6 +47,8 @@ class Router extends Component {
                                />
                            ) 
                         }} />
+                        <Route exact path="/contacto" component={Contacto}
+                        />
                         <Route component={Error}/>
                     </Switch>
                 </div>
