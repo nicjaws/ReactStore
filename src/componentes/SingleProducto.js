@@ -3,9 +3,8 @@ import './SingleProducto.css';
 
 const SingleProducto = (props) => {
 
-    if(props) return null;
-
     const {imagen, nombre, precio, descripcion} = props.producto;
+    if(!imagen) return null;
     return (
       <div className="info-producto">
           <div className="imagen">
